@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Lift Forecast · Session 418 · Sequen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=DM+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div class="loading" id="loading"><div class="box"><div class="dots"><i></i><i></i><i></i><i></i></div><div class="m" id="loadmsg">Loading exploration logs</div></div></div>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 105 28" overflow="visible"><path d="M 37.88 6.072 C 41.367 6.072 42.629 8.35 42.629 8.35 L 42.689 8.35 L 42.689 7.803 C 42.689 7.012 43.261 6.437 44.643 6.436 L 52.848 6.436 C 54.261 6.436 54.862 7.074 54.862 8.472 L 54.862 15.609 C 54.862 17.493 55.344 18.768 57.237 18.768 C 60 18.768 61.534 16.307 61.534 13.544 L 61.534 6.437 L 65.351 6.437 L 65.351 18.009 C 65.351 18.435 65.592 18.679 66.012 18.679 L 68.477 18.679 C 67.656 17.384 67.213 15.832 67.213 14.184 C 67.213 9.415 70.399 6.074 74.998 6.074 C 77.235 6.074 78.957 6.923 80.107 8.295 L 80.107 6.438 L 85.305 6.438 C 86.657 6.438 87.32 7.075 87.32 8.169 L 87.32 8.624 C 87.32 8.954 87.261 9.282 87.258 9.293 L 87.32 9.293 C 87.979 7.987 89.633 6.074 92.728 6.073 C 96.124 6.073 98.078 7.866 98.078 11.967 L 98.078 18.01 C 98.078 18.436 98.319 18.68 98.74 18.68 L 99.281 18.68 C 99.85 17.793 100.831 17.255 101.885 17.253 L 101.887 17.255 C 103.607 17.255 105 18.662 105 20.401 C 105 22.139 103.607 23.546 101.887 23.546 C 100.754 23.543 99.713 22.924 99.169 21.931 L 96.307 21.931 C 94.865 21.931 94.264 21.323 94.263 19.866 L 94.263 12.757 C 94.263 10.873 93.782 9.598 91.859 9.598 C 89.818 9.598 88.285 10.904 87.743 12.757 C 87.533 13.394 87.442 14.095 87.442 14.822 L 87.442 21.931 L 83.654 21.931 L 83.654 10.388 C 83.654 9.932 83.414 9.72 82.994 9.719 L 81.014 9.719 C 81.525 10.804 81.791 12.068 81.791 13.425 C 81.791 13.876 81.7 14.831 81.699 14.852 L 71.12 14.852 C 71.421 17.585 73.404 19.013 75.718 19.013 C 78.174 19.013 80.003 17.294 80.015 17.282 L 81.609 19.955 C 81.609 19.955 79.264 22.294 75.448 22.294 C 74.495 22.294 73.61 22.163 72.803 21.922 L 72.803 21.928 L 63.698 21.928 C 62.375 21.928 61.684 21.29 61.684 20.197 L 61.684 19.772 C 61.684 19.408 61.715 19.074 61.715 19.074 L 61.655 19.074 C 60.933 20.684 59.01 22.294 56.365 22.294 C 53.09 22.294 51.075 20.623 51.075 16.401 L 51.075 10.389 C 51.075 9.932 50.834 9.719 50.413 9.719 L 46.808 9.719 C 46.387 9.719 46.146 9.932 46.146 10.388 L 46.146 28 L 42.329 28 L 42.329 21.441 C 42.329 20.665 42.388 20.122 42.39 20.106 L 42.329 20.106 C 42.31 20.139 41.012 22.293 37.73 22.293 C 33.582 22.293 30.937 18.983 30.937 14.183 C 30.937 9.384 33.822 6.072 37.88 6.072 Z M 9.72 0 C 12.213 0 16.06 1.185 16.06 4.251 L 16.06 6.255 L 12.514 6.255 L 12.514 5.283 C 12.514 4.282 11.104 3.613 9.691 3.613 C 7.886 3.613 6.565 4.556 6.565 5.923 C 6.565 9.257 14.83 8.967 16.36 14.172 C 16.365 9.41 19.548 6.076 24.143 6.075 C 28.531 6.075 30.935 9.325 30.935 13.426 L 30.938 13.426 C 30.938 13.877 30.851 14.831 30.848 14.853 L 20.269 14.853 C 20.57 17.585 22.553 19.013 24.868 19.014 C 27.314 19.014 29.138 17.308 29.165 17.283 L 30.759 19.956 C 30.759 19.956 28.414 22.294 24.597 22.295 C 20.327 22.295 17.417 19.673 16.599 16.222 C 16.461 19.533 13.87 22.293 9.512 22.293 L 5.595 22.293 C 5.012 23.079 4.092 23.543 3.113 23.545 C 1.393 23.545 0 22.137 0 20.399 C 0 18.661 1.393 17.253 3.113 17.253 C 4.217 17.253 5.184 17.835 5.737 18.711 L 9.571 18.711 C 11.193 18.711 12.636 17.83 12.636 16.16 C 12.636 12.485 2.598 12.788 2.598 6.075 C 2.597 2.582 5.603 0 9.72 0 Z M 38.63 9.386 C 36.557 9.386 34.783 11.117 34.783 14.185 C 34.783 17.253 36.346 19.045 38.599 19.046 C 40.582 19.046 42.447 17.588 42.447 14.155 L 42.447 14.154 C 42.447 11.754 41.185 9.386 38.63 9.386 Z M 24.143 9.05 C 22.189 9.05 20.807 10.236 20.387 12.179 L 27.029 12.179 C 26.969 10.327 25.706 9.05 24.143 9.05 Z M 74.994 9.05 C 73.04 9.05 71.657 10.236 71.237 12.179 L 77.879 12.179 C 77.819 10.327 76.556 9.05 74.994 9.05 Z" fill="#11112c"></path></svg></div>
+    <div class="ws"><span class="dot"></span><div><div class="t">Demo Retailer</div><div class="s">Prod · us-east-1</div></div><i data-lucide="chevrons-up-down" style="width:15px;height:15px;margin-left:auto;color:#999"></i></div>
+    <nav class="nav">
+      <div class="grp"><i style="background:var(--yellow)"></i>Research</div>
+      <a><i data-lucide="layout-grid"></i>Overview</a>
+      <a class="on"><i data-lucide="flask-conical"></i>Sessions<span class="n">418</span></a>
+      <a class="sub on">Session 418<span class="n">Running</span></a>
+      <a class="sub">Session 417<span class="n">Done</span></a>
+      <a class="sub">Session 416<span class="n">Done</span></a>
+      <a><i data-lucide="gauge"></i>Harness Library</a>
+      <a><i data-lucide="library"></i>Knowledge Store</a>
+      <a><i data-lucide="boxes"></i>Frontier Models</a>
+      <div class="grp"><i style="background:var(--teal)"></i>Production</div>
+      <a><i data-lucide="split"></i>Live Tests<span class="n">3</span></a>
+      <a><i data-lucide="server"></i>Ranking Clusters</a>
+      <a><i data-lucide="activity"></i>Event Streams</a>
+      <a><i data-lucide="plug"></i>Ranking API</a>
+    </nav>
+    <div class="sfoot">
+      <a class="me" style="text-decoration:none;color:inherit"><span class="av">AS</span><div><div class="nm">Applied Science</div><div class="rl">Admin</div></div><i data-lucide="settings" style="width:16px;height:16px;margin-left:auto;color:#999"></i></a>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="top">
+      <div class="crumb">Sessions <span>/</span> RRI-0418 <span>/</span> <b>Live Lift Forecast</b></div>
+      <div class="sp"></div>
+      <div class="search"><i data-lucide="search" style="width:15px;height:15px"></i>Search experiments, models<kbd>⌘K</kbd></div>
+      <i data-lucide="bell" style="width:18px;height:18px;color:#777"></i>
+    </div>
+    <div class="wrap">
+      <div class="hdr">
+        <div>
+          <div class="label"><i></i>Session 418 · Recursive Ranking Intelligence</div>
+          <h1>Which offline wins <span>hold up live.</span></h1>
+          <p class="lede" id="lede"></p>
+        </div>
+        <div class="act">
+          <button class="btn" id="export"><i data-lucide="download"></i>Export</button>
+          <button class="btn fill" id="promote">Promote to live A/B</button>
+        </div>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="tabs">
+        <a>Overview</a><a>Experiments <span class="n" id="nexp">240</span></a><a>Harness runs</a><a class="on">Live Lift Forecast <span class="pill-new" style="margin-left:2px">New</span></a><a>Knowledge</a>
+      </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="grid2">
+        <div class="card ch">
+          <div class="head"><div><h3>Offline estimate vs. forecast live readout</h3><p class="sub" id="ch1sub"></p></div>
+            <div class="r seg" id="ch1seg"><button data-v="raw" class="on">Top 30 offline</button><button data-v="fc">Top 30 forecast</button></div></div>
+          <svg id="ch1" width="100%" height="300"></svg>
+          <div class="legend"><span><i style="border:2px solid var(--pink);background:#fff;width:10px;height:10px"></i>Offline DR estimate</span><span><i style="background:var(--teal)"></i>Forecast live readout</span><span><i class="bar" style="background:var(--blue)"></i>80% band</span><span><i style="background:var(--yellow)"></i>Recommended</span><span id="lgTruth" class="hide"><i style="background:#3d7a5a;border-radius:1px;width:8px;height:8px;transform:rotate(45deg)"></i>Simulated true live lift</span></div>
+        </div>
+        <div class="card ch">
+          <div class="head"><div><h3>Calibration on past live tests</h3><p class="sub" id="ch2sub"></p></div></div>
+          <svg id="ch2" width="100%" height="300"></svg>
+          <div class="legend"><span><i style="background:var(--sage)"></i>Forecast at promotion</span><span><i style="border:2px solid var(--pink);background:#fff;width:10px;height:10px"></i>Raw offline estimate</span><span><i class="bar" style="background:#cfcfcf;height:2px"></i>Readout = forecast</span></div>
+        </div>
+      </div>
+      <div class="lower">
+        <div>
+          <div class="card tbl">
+            <div class="head"><div><h3>Promotion queue</h3><p class="sub" id="tblsub"></p></div>
+              <div class="r"><div class="seg" id="sortseg"><button data-v="fc" class="on">Rank by P(win)</button><button data-v="raw">Rank by offline</button></div></div></div>
+            <table><thead><tr><th>#</th><th>Experiment</th><th class="num wrapth">Harness ΔNDCG</th><th class="num">Offline lift</th><th>Forecast readout · 80% band</th><th class="num">P(win)</th><th class="num wrapth">Days to 80% power</th><th></th></tr></thead><tbody id="tbody"></tbody></table>
+            <div class="more"><button id="showall">Show all 240</button><span id="morenote"></span></div>
+          </div>
+        </div>
+        <div>
+          <div class="card panel">
+            <h3>Test plan</h3>
+            <p class="sub">Forecasts are for the readout of the test you configure here.</p>
+            <div class="fld"><label>Traffic per arm <b id="armv"></b></label><input type="range" id="arm" min="1" max="20" step="1"></div>
+            <div class="fld"><label>Duration</label><div class="seg" id="dur"><button data-v="7">7 d</button><button data-v="14">14 d</button><button data-v="21">21 d</button><button data-v="28">28 d</button></div></div>
+            <div class="fld"><label>Live test slots</label><div class="seg" id="slots"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></div></div>
+            <div class="sum" id="plansum"></div>
+            <button class="btn fill" id="promote2">Promote selected</button>
+          </div>
+          <div class="card panel" style="margin-top:14px">
+            <h3>Pooling across experiments</h3>
+            <p class="sub" id="poolsub"></p>
+            <div class="fld"><div class="seg" id="pool"><button data-v="factor" class="on">Correlation-aware</button><button data-v="indep">Independent</button></div></div>
+            <svg id="ch3" width="100%" height="120"></svg>
+            <div class="note" id="poolnote"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card drawer" id="drawer"></div>
+      <div class="card sim" id="sim"><i data-lucide="flask-round" style="width:20px;height:20px;color:var(--sage);flex:none"></i><div class="txt" id="simtxt">Simulation check: this concept runs on synthetic logs, so the true lift of every experiment is known. Reveal it to see how the forecast and the raw offline ranking would have done.</div><button class="btn" id="reveal">Reveal simulated truth</button></div>
+    </div>
+    <div class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with Sequen. Synthetic data. <a href="https://github.com/Mohith26/sequen-live-lift-forecast">Source and method</a></div>
+  </main>
+</div>
+<div class="tip" id="tip"></div>
+<script src="data/logs.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
